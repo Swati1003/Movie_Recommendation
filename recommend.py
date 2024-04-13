@@ -35,7 +35,7 @@ def recommend(title):
     #recommended = data['title'].iloc[recommend_idx]
     return data['title'].iloc[recommend_idx]
 
-#User Interface
+#User Interface where user provides movie name
 movie = input("Enter the movie name you watched:")
 if((data['title'].eq(movie)).any()==True):
     print("Also Watch:")
