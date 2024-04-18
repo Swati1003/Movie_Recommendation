@@ -31,7 +31,7 @@ def recommend(title):
     query = X[idx]
     scores = cosine_similarity(query,X)
     scores=scores.flatten()
-    recommend_idx = (-scores).argsort()[1:11]
+    recommend_idx = (-scores).argsort()[0:10]
     #recommended = data['title'].iloc[recommend_idx]
     return data['title'].iloc[recommend_idx]
 
